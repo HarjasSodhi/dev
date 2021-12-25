@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        Sample Text
+    </p>
+    <input type="text">
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+<script>
+    // use $(""); as query selector.
+    // $($("input")[0]).change(function (e) {//syntax for selecting a single item out of a list
+    //     console.log("HELLO");
+    // })
+
+    $($("input")[0]).on("input", function (e) {//you can define other events(which do not have the syntax like above) like this here.
+        // console.log($(this));//you can use this syntax also to get refference of the element on which event listener is being applied
+        $($("p")[0]).text(e.currentTarget.value);
+    })
+
+    $($("input")[0]).on("keypress", function (e) {//you can define other events(which do not have the syntax like above) like this here.
+        if(e.key=="Enter"){
+            alert(e.currentTarget.value);
+            e.currentTarget.value="";
+            $($("p")[0]).text("Sample Text");
+        }
+    })
+</script>
+
+</html>

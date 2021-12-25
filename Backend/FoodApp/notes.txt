@@ -1,0 +1,104 @@
+general-
+    http-hyper text transfer protocol
+    ftp-file transfer protocol
+    smtp-simple mail transfer protocol
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5229/
+
+DNS
+    fullform - domain name server
+    whenever we enter a url the browser goes to a domain name server to find the address of the html and then the server fetches it and loads the page
+
+
+diiference between send and json-
+    The res. send function sets the content type to text/Html which means that the client will now treat it as text. ... json function on the other handsets the content-type header to application/JSON so that the client treats the response string as a valid JSON object
+    -)send already knows status code and datatype.json does not
+
+
+status code :-
+    defines the status of browser gets
+        there are ranges of status code
+            100- informational
+            200- success
+            300- redirectional
+            400- user side error
+            500- server side error
+
+Server Methods
+    get-get data
+    POST-send data in server
+    delete-delete data in server
+    patch- data update
+
+
+
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5243
+
+API
+    application program interface
+    layer betwwen DB and server
+    acts as a contract
+
+REST 
+    set of Rules on which APIs can be made. Another Guideline System REST is SOAP.
+        1)json data only
+        2)stateless
+        3)no matter the source,the responce for a particular request should be same
+        4)routes should use nouns
+        5)Don't Use Verbs in URLs.
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5256/#
+
+middleWare- any function in the server side is called a middleware. we can use app.use() to execute something we want to execute irrespective of the route and we need to put next(); so the control can continue.
+
+mongoDB-it is same as firebase but better in costing security and scalability and nested queries are easier to perform. it is noSql.
+
+mongoose- a library which provides a layer of abstarction between node and mongo.
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5346
+
+collection- group of similar data
+doc- each entry in the collection
+mongoose - object data moddelling abd binary JSON
+ip adress whitelisting- it is same as cors enabled but for mongo Databases
+add DB user
+schema - blueprint of a doc in collection.
+model - A Mongoose model is a wrapper on the Mongoose schema. A Mongoose schema defines the structure of the document, default values, validators, etc., whereas a Mongoose model provides an interface to the database for creating, querying, updating, deleting records, etc
+module.exports=name/obj with names
+res.status(400)-remember;
+Novoresume
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5358
+
+cookies- a token we give to browser which comes along with the req in header next times to save time in things like login etc
+
+class link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5367/
+
+Helper Functions- you can create a different file for some functions and export them eg- https://github.com/goelabhishek694/pep_backend/commit/615a7622585ffb1f74b5499792164952bb84eaf7
+
+JSON web token(JWT)-
+    it is a token sent from front end to backeend.
+    back end contains a secret encryption key wrt which the uid in payload is encrypted.(like in cryptoJS)
+    it consists of-
+        1)header-contains encryption algo
+        2)payload-contains a non repeating unique id
+        3)siganture-forms a id which secret key and uid using algo
+    this token is sent along with data in all subsequent requests to backend and using the uid and and algo in the received token and the secret key present in backend,backend generates a new signature and verifies it with its own signature and acts accordingly.
+    algo is sent too because the algo might change across servers in different servers.
+    after logout jwt is destroyed
+
+class Link - https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5501
+forgotPassword flow -
+    1)ask for email
+    2)send a token to the the email and store the same token against the same email in database
+    3)route to reset pass page and ask for email and token again.
+    4)match it and ask for new password and change the password in database
+
+class Link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5544
+Authorization and crud operations on userRoute
+
+class Link- https://classroom.pepcoding.com/the-placement-program-pitampura-mar-14-2021/116/classvideos/5596
+    factory-important
+    review flow-
+

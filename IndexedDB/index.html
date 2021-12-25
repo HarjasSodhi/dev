@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <select id="notes-type">
+            <option value="placementNotes">placementNotes</option>
+            <option value="generalNotes">generalNotes</option>
+            <option value="collegeNotes">collegeNotes</option>
+        </select>
+
+        <input type="text" placeholder="Title" id="title">
+        <input type="text" placeholder="Content" id="content">
+        <button>Submit</button>
+    </div>
+    <div class="container2">
+        <div class="viewBtnCont">
+            <button id="placementNotes">placementNotes</button>
+            <button id="generalNotes">generalNotes</button>
+            <button id="collegeNotes">collegeNotes</button>
+        </div>
+        <div class="storedNotes">
+            <button class="clear">Clear</button>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

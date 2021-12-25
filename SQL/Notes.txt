@@ -1,0 +1,49 @@
+Database - place to collect data in a meaningfull wau so that crud operations on it are fast.
+
+objectives-
+remove redundancy/duplicasy
+inconsistency
+data security
+enforcing standards
+
+SQL is a structure just like ECMA script
+
+RDBMS- data in form of tables where tables are related .
+
+tupple - row in a table
+attribute-columns in a table
+cardinality-cardinality of a attribute is the number of unique values is can have
+degree - number of attributes
+
+SQL code subcategories
+
+Data defination language- create,delete alter etc
+Data manipulation language- update insert delete etc
+Data Query language- seraching select
+Data control language- roles,powers,access
+Data transactional language- rollback failed operations,commit operations etc
+
+
+Queries-:
+
+create table table (
+    col1 datatype (size) constraints
+)
+
+insert into tableName values (row1) 
+insert into tableName values (row1),(row2)
+insert into tableName (clo1,col2) values(val1,val2); 
+
+constraints-:
+1)not null
+2)null
+3)primary key
+4)unique
+5)default
+6)check
+
+
+subQueries  :-
+insert into emp select *from emp2;
+
+

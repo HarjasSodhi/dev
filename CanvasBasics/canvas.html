@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            /* overflow: hidden; */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas></canvas>
+    <!-- <img src="img.jpg"> -->
+</body>
+
+<script>
+//need to add new paths or else last property will be applied to whole drawing.
+    let canvas = document.querySelector("canvas");
+    let img=document.querySelector("img");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    let tool = canvas.getContext("2d");
+    // tool.moveTo(0, 0);
+    // img.addEventListener("load",function(e){
+    //     tool.drawImage(img,0,0);
+    // })
+    // tool.lineTo(400, 400);
+    // tool.strokeStyle = "red"
+    // // tool.lineWidth=100;
+    // tool.stroke();
+    // tool.beginPath();
+    // tool.moveTo(400, 400);
+    // tool.lineTo(800, 0);
+    // tool.strokeStyle = "blue"
+    // tool.stroke();
+    // tool.fillStyle= "red"
+    // tool.fillRect(100,100,400,400);
+
+</script>
+
+</html>
